@@ -50,6 +50,9 @@ export default function BusRoute() {
   }
 
   async function calculateRoute() {
+    /**
+   * @description : Calculate the route between two points
+   */
     let startTime = time.split("-")[0];
     let endTime = time.split("-")[1];
 
@@ -80,6 +83,11 @@ export default function BusRoute() {
     // eslint-disable-next-line no-undef
     const directionsService = new google.maps.DirectionsService();
     const results = await directionsService.route({
+    /**
+    * @description : Display the route between two points
+    * @param {object} origin - origin point
+    * @param {object} destination - destination point
+    */
       origin: origin,
       destination: destination,
       // eslint-disable-next-line no-undef

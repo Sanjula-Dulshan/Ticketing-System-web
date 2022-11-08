@@ -35,6 +35,9 @@ const Home = () => {
   };
 
   const addData = (e) => {
+  /**
+   * @description : add data
+   */
     e.preventDefault();
 
     const { name, email, date, password } = inpval;
